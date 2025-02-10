@@ -9,6 +9,15 @@
   </head>
   <body>
     <header>
+      <div class="mobile-header">
+        <button type="button" class="hamburger-button">
+          <img
+            class="hamburger-icon"
+            src="./img/hamburger.svg"
+            alt="Three horizontal lines, positioned one above the other."
+          />
+        </button>
+      </div>
       <nav class="desktop-nav" aria-label="Primary">
         <ul>
           <li>
@@ -45,21 +54,20 @@
     <section class="hero">
       <img
         class="logo"
-        src="images/Brooke-logo.png"
+        src="images/Brooke-logo.jpeg"
         alt="Name logo: Brooke Ashleigh"
       />
-      <h1 class="name-title">
-        Brooke <br />
-        Ashleigh
-      </h1>
-      <h2>
-        Just a gal on her <br />
-        software development <br />
-        journey.
-      </h2>
+
+      <div class="tagline">
+        <h2>
+          Just a gal on her <br />
+          software development <br />
+          journey.
+        </h2>
+      </div>
     </section>
     <section class="project-container">
-      <a href="https://furfuturefunding.netlify.app/" title="Furfuture Funding">
+      <a href="Projects.html" title="Furfuture Funding">
         <img
           class="furfuturefunding"
           src="images/FFF.png"
@@ -68,20 +76,22 @@
       </a>
     </section>
     <footer>
-      <a href="https://github.com/Beerooke31" title="Brooke's Github">
-        <img
-          class="socials-icon"
-          src="images/github-mark.png"
-          alt="Github Icon: Cat with a tentacle instead of an arm"
-        />
-      </a>
-      <a href="https://www.linkedin.com/in/brooke-pierson-94038a2a9/">
-        <img
-          class="socials-icon"
-          src="images/LI-In-Bug.png"
-          alt="LinkedIn Icon: A blue square with white 'in' in the middle"
-        />
-      </a>
+      <div class="socials-icon">
+        <a href="https://github.com/Beerooke31" title="Brooke's Github">
+          <img
+            class="github-icon"
+            src="images/github-mark.png"
+            alt="Github Icon: Cat with a tentacle instead of an arm"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/brooke-pierson-94038a2a9/">
+          <img
+            class="linkedin-icon"
+            src="images/LI-In-Bug.png"
+            alt="LinkedIn Icon: A blue square with white 'in' in the middle"
+          />
+        </a>
+      </div>
     </footer>
   </body>
 </html>
