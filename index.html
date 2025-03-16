@@ -4,53 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="Portfolio.js"></script>
     <title>Brooke Ashleigh</title>
   </head>
   <body>
-    <header>
-      <div class="mobile-header">
-        <button type="button" class="hamburger-button">
-          <img
-            class="hamburger-icon"
-            src="./img/hamburger.svg"
-            alt="Three horizontal lines, positioned one above the other."
-          />
-        </button>
+    <div class="container" onclick="toggleMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <div id="portfolioNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="/about.html">About</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/contactForm.html">Contact Me</a>
       </div>
-      <nav class="desktop-nav" aria-label="Primary">
-        <ul>
-          <li>
-            <a href="">Home</a>
-          </li>
-          <li>
-            <a href="About.html">About</a>
-          </li>
-          <li>
-            <a href="Projects.html">Projects</a>
-          </li>
-          <li>
-            <a href="Contact-Form.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="mobile-nav display-none" aria-label="Primary">
-        <ul>
-          <li>
-            <a href="">Home</a>
-          </li>
-          <li>
-            <a href="About.html">About</a>
-          </li>
-          <li>
-            <a href="Projects.html">Projects</a>
-          </li>
-          <li>
-            <a href="Contact-Form.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    </div>
+    <span style="font-size: 30px; cursor: pointer" onclick="openNav()"></span>
+
     <section class="hero">
       <img
         class="logo"
@@ -65,15 +38,6 @@
           journey.
         </h2>
       </div>
-    </section>
-    <section class="project-container">
-      <a href="Projects.html" title="Furfuture Funding">
-        <img
-          class="furfuturefunding"
-          src="images/FFF.png"
-          alt="Furfuture Funding Website"
-        />
-      </a>
     </section>
     <footer>
       <div class="socials-icon">
@@ -93,5 +57,6 @@
         </a>
       </div>
     </footer>
+    <script src="portfolio.js"></script>
   </body>
 </html>

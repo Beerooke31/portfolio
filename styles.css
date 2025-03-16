@@ -4,29 +4,93 @@
   font-family: "Montserrat", serif;
 }
 
+/* Hamburger Menu */
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #b1a1ed;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Navbar */
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #b1a1ed;
+  opacity: 0.9;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #ffd230;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* Main page content */
+
 .logo {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 5rem 5rem 5rem 15rem;
+  padding-left: 30rem;
+  margin: 5rem 15rem;
 }
 
 .tagline {
   display: flex;
   justify-content: center;
-  width: 100%;
-  padding: 5rem 15rem 5rem 15rem;
+  padding: 5rem 15rem;
   border: #ffd230;
   background-color: #ffd230;
   color: white;
-}
-
-.furfuturefunding {
-  display: flex;
-  justify-content: center;
-  width: 30rem;
-  margin: 5rem 5rem 5rem 12rem;
-  border-radius: 10%;
 }
 
 .socials-icon {
@@ -41,4 +105,43 @@
   width: 5rem;
   height: 5rem;
   padding: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 15rem;
+  }
+}
+
+/* Projects Page */
+
+.project-title {
+  text-align: center;
+  margin: 5rem 0 10rem;
+  font-size: 6rem;
+}
+
+.project-ff {
+  text-align: center;
+  padding-bottom: 10rem;
+}
+
+.furfuturefunding {
+  width: 20rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 10%;
+}
+
+.sb-header {
+  text-align: center;
+}
+
+.starbounty {
+  width: 20rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 3%;
 }
