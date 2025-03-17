@@ -80,7 +80,7 @@
 .logo {
   display: flex;
   justify-content: center;
-  padding-left: 30rem;
+  padding-left: 15rem;
   margin: 5rem 15rem;
 }
 
@@ -91,6 +91,7 @@
   border: #ffd230;
   background-color: #ffd230;
   color: white;
+  margin-bottom: 5rem;
 }
 
 .socials-icon {
@@ -144,4 +145,35 @@
   display: flex;
   justify-content: center;
   border-radius: 3%;
+}
+
+/* About Me */
+
+.about-background {
+  background-color: black;
+  color: white;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  font-size: 40px;
+}
+
+.cp-magicalgirl {
+  width: 15em;
+  display: flex;
+  padding: 3rem 5rem;
+  justify-content: center;
+  margin: auto;
+  border-radius: 40%;
+}
+
+.about-body {
+  margin: auto;
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
 }
