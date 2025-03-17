@@ -7,6 +7,22 @@
     <title>Get in touch</title>
   </head>
   <body>
+    <div class="container" onclick="toggleMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <div id="portfolioNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="/about.html">About</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/contactForm.html">Contact Me</a>
+      </div>
+    </div>
+    <span style="font-size: 30px; cursor: pointer" onclick="openNav()"></span>
     <section class="contact-form">
       <h2>Get in touch</h2>
       <form>
@@ -23,5 +39,6 @@
         <input type="submit" value="Submit" />
       </form>
     </section>
+    <script src="portfolio.js"></script>
   </body>
 </html>
