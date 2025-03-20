@@ -7,22 +7,25 @@
     <title>About</title>
   </head>
   <body class="about-background">
-    <div class="container" onclick="toggleMenu(this)">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </div>
-    <div id="portfolioNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
-      <div class="overlay-content">
-        <a href="/about.html">About</a>
-        <a href="/projects.html">Projects</a>
-        <a href="/contactForm.html">Contact Me</a>
+    <nav>
+      <div class="container" onclick="toggleMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
-    </div>
-    <span style="font-size: 30px; cursor: pointer" onclick="openNav()"></span>
+      <div id="portfolioNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="overlay-content">
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/projects.html">Projects</a>
+          <a href="/contactForm.html">Contact Me</a>
+        </div>
+      </div>
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"></span>
+    </nav>
     <h2 class="about-me" alt="about-me">About Me</h2>
     <img
       class="cp-magicalgirl"
@@ -33,7 +36,8 @@
       Hi there and hello! Thank you for stopping by. <br />I'm a fullstack
       developer currently expanding my knowledge in all things Javascript (it
       <br />
-      really can do it all - don't listen to the naysayers).
+      really can do it all - don't listen to the naysayers who don't want
+      Javascript in the backend).
       <br />
       One of my favourite pastimes is sitting down to do some programming when
       <br />

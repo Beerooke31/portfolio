@@ -7,36 +7,60 @@
     <title>Get in touch</title>
   </head>
   <body>
-    <div class="container" onclick="toggleMenu(this)">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </div>
-    <div id="portfolioNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
-      <div class="overlay-content">
-        <a href="/about.html">About</a>
-        <a href="/projects.html">Projects</a>
-        <a href="/contactForm.html">Contact Me</a>
+    <nav>
+      <div class="container" onclick="toggleMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
-    </div>
-    <span style="font-size: 30px; cursor: pointer" onclick="openNav()"></span>
+      <div id="portfolioNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="overlay-content">
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/projects.html">Projects</a>
+          <a href="/contactForm.html">Contact Me</a>
+        </div>
+      </div>
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"></span>
+    </nav>
     <section class="contact-form">
-      <h2>Get in touch</h2>
+      <header>
+        <h2 class="heading">Get in touch</h2>
+      </header>
       <form>
-        <label for="your-name">Your name</label>
-        <input type="text" id="your-name" />
-        <label for="location">Where are you?</label>
-        <select name="location-selection" id="location">
-          <option value="Australia">Australia</option>
-          <option value="New Zealand">New Zealand</option>
-          <option value="Other">Wherever else there is</option>
+        <label for="your-name">Your name<span class="mandatory">*</span></label>
+        <input
+          type="text"
+          id="your-name"
+          required
+          aria-required="true"
+          placeholder="Name please"
+          required=""
+        />
+        <label for="email"
+          >Your email address<span class="mandatory">*</span></label
+        >
+        <input
+          type="text"
+          id="email"
+          type="text"
+          id="email"
+          required
+          aria-required="true"
+          placeholder="Enter your email"
+          required=""
+        />
+        <label for="enquiry">Reason for Contact?</label>
+        <select name="enquiry-selection" id="enquiry-type">
+          <option value="Business">Business</option>
+          <option value="Say Hi">Just to say Hi!</option>
         </select>
         <label for="message">Your message</label>
-        <textarea name="message-text" id="message" rows="10"></textarea>
-        <input type="submit" value="Submit" />
+        <textarea name="message-text" id="message" rows="5"></textarea>
+        <button type="submit" value="Submit">Submit</button>
       </form>
     </section>
     <script src="portfolio.js"></script>
