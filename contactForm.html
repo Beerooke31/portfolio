@@ -26,43 +26,44 @@
       </div>
       <span style="font-size: 30px; cursor: pointer" onclick="openNav()"></span>
     </nav>
-    <section class="contact-form">
+    <form class="contact-form" action="/my-handling-form-page" method="post">
       <header>
         <h2 class="heading">Get in touch</h2>
       </header>
-      <form>
-        <label for="your-name">Your name<span class="mandatory">*</span></label>
-        <input
-          type="text"
-          id="your-name"
-          required
-          aria-required="true"
-          placeholder="Name please"
-          required=""
-        />
-        <label for="email"
-          >Your email address<span class="mandatory">*</span></label
-        >
-        <input
-          type="text"
-          id="email"
-          type="text"
-          id="email"
-          required
-          aria-required="true"
-          placeholder="Enter your email"
-          required=""
-        />
-        <label for="enquiry">Reason for Contact?</label>
-        <select name="enquiry-selection" id="enquiry-type">
-          <option value="Business">Business</option>
-          <option value="Say Hi">Just to say Hi!</option>
-        </select>
-        <label for="message">Your message</label>
-        <textarea name="message-text" id="message" rows="5"></textarea>
-        <button type="submit" value="Submit">Submit</button>
-      </form>
-    </section>
+
+      <label for="name">Your name<span class="mandatory">*</span></label>
+      <input
+        type="text"
+        id="name"
+        name="user-name"
+        required
+        aria-required="true"
+        placeholder="Name please"
+        required=""
+      />
+
+      <label for="mail"
+        >Your email address<span class="mandatory">*</span></label
+      >
+      <input
+        type="email"
+        id="mail"
+        name="user-email"
+        required
+        aria-required="true"
+        placeholder="Enter your email"
+        required=""
+      />
+
+      <label for="enquiry">Reason for Contact?</label>
+      <select name="enquiry-selection" id="enquiry-type">
+        <option value="business">Business</option>
+        <option value="greeting">Just to say Hi!</option>
+      </select>
+      <label for="msg">Your message</label>
+      <textarea type="text" id="msg" name="user-message" rows="5"></textarea>
+      <button class="submit" type="submit" value="Submit">Submit</button>
+    </form>
     <script src="portfolio.js"></script>
   </body>
 </html>

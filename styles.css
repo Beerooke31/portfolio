@@ -80,8 +80,7 @@
 .logo {
   display: flex;
   justify-content: center;
-  padding-left: 15rem;
-  margin: 5rem 15rem;
+  margin: auto;
 }
 
 .tagline {
@@ -141,7 +140,7 @@
 
 .starbounty {
   width: 20rem;
-  margin: auto;
+  margin: 0 auto 10rem;
   display: flex;
   justify-content: center;
   border-radius: 3%;
@@ -180,6 +179,10 @@
 
 /* Contact Form */
 
+.heading {
+  font-size: 35px;
+}
+
 .mandatory {
   color: red;
 }
@@ -189,11 +192,40 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 10rem auto;
+  padding: 2rem;
+  border: solid #8c52ff;
+  width: 30rem;
+  border-radius: 2rem;
+  background-color: #b1a1ed;
 }
 
 input[type="text"],
+input,
 select,
 textarea {
   padding: 12px;
-  resize: vertical;
+  resize: both;
+  border-radius: 10px;
+  border: solid #8c52ff;
+  background-color: white;
+}
+
+label {
+  padding: 10px 0px 10px 0px;
+}
+
+.submit {
+  padding: 10px;
+  margin: 10px;
+  border: solid #8c52ff;
+  width: 10rem;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.submit:active {
+  background-color: #7158cd;
+  box-shadow: 0 5px #737373;
+  transform: translateY(4px);
 }
