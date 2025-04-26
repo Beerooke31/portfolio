@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Get in touch</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container" onclick="toggleMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div id="portfolioNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="overlay-content">
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/projects.html">Projects</a>
+          <a href="/contactForm.html">Contact Me</a>
+        </div>
+      </div>
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"></span>
+    </nav>
+    <form
+      class="contact-form"
+      id="contact-form"
+      method="POST"
+      action="https://script.google.com/macros/s/AKfycbyrh4pBmRNJvdGnu3iykYQ-I2-WSprYk77PjJdepxdAKG8ODOirCQut8hqJYfkgfk7g-g/exec"
+    >
+      <header>
+        <h2 class="heading">Get in touch</h2>
+      </header>
+
+      <label for="name">Your name<span class="mandatory">*</span></label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        aria-required="true"
+        placeholder="Name please"
+        required=""
+      />
+
+      <label for="mail"
+        >Your email address<span class="mandatory">*</span></label
+      >
+      <input
+        type="email"
+        id="mail"
+        name="email"
+        required
+        aria-required="true"
+        placeholder="Enter your email"
+        required=""
+      />
+
+      <label for="enquiry">Reason for Contact?</label>
+      <select name="enquiry-selection" id="enquiry-type">
+        <option value="business">Business</option>
+        <option value="greeting">Just to say Hi!</option>
+      </select>
+      <label for="msg">Your message</label>
+      <textarea type="text" id="msg" name="message" rows="5"></textarea>
+      <button class="submit" type="submit" id="submit" value="Submit">
+        Submit
+      </button>
+    </form>
+    <script src="portfolio.js"></script>
+  </body>
+</html>

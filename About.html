@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>About</title>
+  </head>
+  <body class="about-background">
+    <nav>
+      <div class="container" onclick="toggleMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div id="portfolioNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="overlay-content">
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/projects.html">Projects</a>
+          <a href="/contactForm.html">Contact Me</a>
+        </div>
+      </div>
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"></span>
+    </nav>
+    <h2 class="about-me" alt="about-me">About Me</h2>
+    <img
+      class="profile-pic"
+      src="/images/profile-photo.png"
+      alt="Anime-style picture of Brooke"
+    />
+    <p class="about-body">
+      Hi there and hello! Thank you for stopping by. <br />I'm a junior
+      developer currently expanding my knowledge in all things Javascript,
+      including Angular and React. One of my favourite pastimes is sitting down
+      to do some programming when the buzzing in my brain gets to be too
+      overwhelming. <br />
+      If you'd like to discuss how combatting the wilderness of my mental state
+      through coding can be an asset to you or your business, please get in
+      touch!
+    </p>
+    <script src="portfolio.js"></script>
+  </body>
+</html>
