@@ -148,59 +148,35 @@
 
 /* About Me */
 
-.about-background {
-  background-color: black;
-  color: white;
-}
-
 .about-me {
   display: flex;
   justify-content: center;
   padding-top: 5rem;
   font-size: 80px;
-  color: #fff;
+  color: #9aedb6;
   text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
 }
 
-@keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #f0f, 0 0 30px #e60073, 0 0 40px #0ff,
-      0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  to {
-    text-shadow: 0 0 20px #0ff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
-      0 0 50px #0ff, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #0ff;
-  }
-}
-
-.cp-magicalgirl {
+.profile-pic {
   width: 15em;
   display: flex;
   padding: 3rem 5rem;
   justify-content: center;
   margin: auto;
-  border-radius: 40%;
+  border-radius: 30%;
 }
 
 .about-body {
   margin: 5rem auto;
   padding: 5rem;
   display: flex;
+  line-height: 2;
   justify-content: center;
   padding-bottom: 5rem;
-  border: solid white;
+  border: solid #64cc87;
+  background-color: #9aedb6;
   border-radius: 10px;
   width: 40rem;
-  box-shadow: inset 0 0 50px #fff, /* inner white */ inset 20px 0 80px #f0f,
-    /* inner left magenta short */ inset -20px 0 80px #0ff,
-    /* inner right cyan short */ inset 20px 0 300px #f0f,
-    /* inner left magenta broad */ inset -20px 0 300px #0ff,
-    /* inner right cyan broad */ 0 0 50px #fff,
-    /* outer white */ -10px 0 80px #f0f,
-    /* outer left magenta */ 10px 0 80px #0ff;
 }
 
 /* Contact Form */
@@ -243,7 +219,7 @@ label {
 
 .submit {
   padding: 10px;
-  margin: 10px;
+  margin: 20px;
   border: solid #8c52ff;
   width: 10rem;
   border-radius: 10px;
