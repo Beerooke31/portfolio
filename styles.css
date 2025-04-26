@@ -80,7 +80,7 @@
 .logo {
   display: flex;
   justify-content: center;
-  margin: auto;
+  margin: 10rem auto;
 }
 
 .tagline {
@@ -90,7 +90,7 @@
   border: #ffd230;
   background-color: #ffd230;
   color: white;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 }
 
 .socials-icon {
@@ -172,7 +172,6 @@
   display: flex;
   line-height: 2;
   justify-content: center;
-  padding-bottom: 5rem;
   border: solid #64cc87;
   background-color: #9aedb6;
   border-radius: 10px;
@@ -230,4 +229,31 @@ label {
   background-color: #7158cd;
   box-shadow: 0 5px #737373;
   transform: translateY(4px);
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  .tagline {
+    padding: 3rem;
+  }
+
+  .logo {
+    margin: 6rem;
+  }
+
+  .socials-icon {
+    padding: 0px;
+  }
+
+  .github-icon,
+  .linkedin-icon {
+    padding: 20px 10px;
+  }
+
+  .about-body {
+    padding: 15px;
+    margin: auto;
+    width: 20rem;
+    height: 27rem;
+  }
 }

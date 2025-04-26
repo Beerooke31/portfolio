@@ -15,17 +15,6 @@ function closeNav() {
   document.querySelector(".overlay").style.width = "0%";
 }
 
-//Email validation
-const email = document.getElementById("mail");
-
-email.addEventListener("input", (event) => {
-  if (email.validity.typeMismatch) {
-    email.setCustomValidity("I'd appreciate you adding an email address");
-  } else {
-    email.setCustomValidity("");
-  }
-});
-
 //Submitting form data to Google Sheets
 
 window.addEventListener("load", function () {
